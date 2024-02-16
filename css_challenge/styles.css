@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue: #0167f5;
+    --black: #0C1313;
+    --white: #FAFBFB;
+    --darkgrey: #344049;
+    --brown: #936D4F;
+    --lightgrey: #A1AEB9;
+    --paleblue: #5493CE;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    min-height: 100vh;
+    width: 98%;
+    background-image: linear-gradient(0deg, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 0) 35%), url("images/island_landscape_background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* .background_image {
+    background-image: url("images/island_landscape_background.webp");
+
+} */
+
+.grid_container{
+display: grid;
+grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+}
+
+#logo {
+    height: 3rem;
+    justify-self: flex-start;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#language_selector{
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+/* pop over menu stuff */
+#bars_icon {
+    font-size: 24px;
+}
+
+[popover] {
+    overflow: hidden;
+}
+
+[popovertarget] {
+    border: none;
+    background: transparent;
+    color: var(--white);
+  }
+
+nav{
+    color: var(--black);
+}
+
+/* end of popover stuff */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#welcometo{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+#wanderlust{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#jobsfill{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightgrey);
+}
+
+.active{
+    border-bottom: 0.3px solid var(--blue);
+    color: var(--blue);
+}
+
+.booking_service_card {
+    display: flex;
+    background-color: var(--white);
+    color: var(--lightgrey);
+    font-size: 1rem;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 500px;
+    width: 40%;
+    height: 50%;
+    border: 0.2rem;
+    border-radius: 0.3rem;
+    box-shadow: -1px 0px 12px -2px rgba(0,0,0,0.75);
+}
+
+.booking_service_nav {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.2px solid var(--lightgrey);
+} 
+
+.left .right textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--lightgrey);
+  }
+
+.booking_form {
+    padding: 1.3rem;
+    font-size: 0.7rem;
+}
+
+.left {
+    float: left;
+    min-width: 150px;
+    width: 21%;
+}
+
+input.left , input.right{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--lightgrey);
+    font-size: 0.8rem;
+    color: var(--black);
+}
+
+.right{
+    float: right;
+    min-width: 150px;
+    width: 19%;
+}
+
+.search-btn{
+    margin: auto;
+    height: 2rem;
+    width: 70%;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 0.6rem;
+}
+
+.footer {
+    padding: 2rem 1rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.social_media_handles{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+

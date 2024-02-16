@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust - Travel &amp; Tourism ✈️</title>
+    <link rel="stylesheet" href="styles2.css">
+
+    <script src="https://kit.fontawesome.com/0d9546a1f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+
+
+</head>
+<body>
+
+
+        <div class="grid_container">
+            <header class="header">
+                <img src="images/logo.png" alt="WanderLust Logo" id="logo">
+        
+                <div class="topnav">
+                    <select name="language" id="language_selector">
+                        <option value="english">ENG</option>
+                    </select>
+                    <button popovertarget=mobile_menu>
+                        <i class="fa-solid fa-bars" id="bars_icon"></i>
+                    </button>
+                </div>
+            </header>
+        
+            <main class="main">
+                <div class="welcome">
+                    <span id="welcometo">Welcome to</span> <br>
+                    <span id="wanderlust">WanderLust.</span> <br>
+                    <span id="jobsfill">Jobs fill your pocket, adventure fill your soul</span>    
+                </div>
+                <br><br>            
+                <div class="booking_service_card">
+                    <ul class="booking_service_nav">
+                        <li class="btn active">
+                            <i class="fa-solid fa-hotel"></i> <br>
+                            <a class="active" href="#">Hotel</a>
+                        </li>
+                        <li class="btn">
+                            <i class="fa-solid fa-plane-up"></i> <br>
+                            <a href="#">Flight</a>
+                        </li>
+                        <li class="btn">
+                            <i class="fa-solid fa-taxi"></i> <br>
+                            <a href="#">Taxi</a>
+                        </li>
+                        <li class="btn">
+                            <i class="fa-sharp fa-solid fa-car"></i> <br>
+                            <a href="#">Car</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="booking_form">
+                        <br><br>
+                        <label class="left" for="destination">Destination:</label> <br>
+                        <input class="left" type="text" name="destination" placeholder="&#xf3c5; Surat Thani, Thailand" style="font-family: Arial, 'Font Awesome 5 Free'"> 
+                        <br> <br>
+        
+                        <label class="left" for="checkindate">Check-in Date:</label>
+                        <label class="right" for="checkoutdate" >Check-out Date:
+                        </label> <br>
+                        <input class="left" type="text" name="checkindate" placeholder="&#xf073; December 31, 2021" style="font-family: Arial, 'Font Awesome 5 Free'">
+                        <input class="right" type="text" name="checkoutdate" placeholder="&#xf073; January 1, 2022" style="font-family: Arial, 'Font Awesome 5 Free'"> 
+                        <br> <br>
+        
+                        <label class="left" for="adults">Adults:</label>
+                        <label for="children" class="right">Children:</label> <br>
+                        <input class="left" type="number" name="adults" min="0" placeholder="&#xf007; 02" style="font-family: Arial, 'Font Awesome 5 Free'">
+                        <input type="number" name="num_children" class="right" min="0" placeholder="&#xf17b; No Children" style="font-family: Arial, 'Font Awesome 5 Free'"> 
+                        <br> <br>
+                        
+                        <label class="left" for="room">Room:</label> <br>
+                        <input class="left" type="number" name="rooms" min="0" placeholder="&#xf466; 01" style="font-family: Arial, 'Font Awesome 5 Free'"> 
+                        <br> <br>
+        
+                        <input class="search-btn" type="submit" value="&#xf002; Find">
+                    </form>
+                </div>
+        
+            </main>
+        
+            <footer class="footer">
+                <div class="social_media_handles">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <i id="question_circle" class="fas fa-question-circle"></i>
+            </footer>
+        
+            <div popover id="mobile_menu">
+                <nav>
+                    <a href="index2.html"><span>Services</span></a>
+                    <a href="index2.html"><span>Discovery</span></a>
+                    <a href="index2.html"><span>Weather</span></a>
+                    <a href="index2.html"><span>My Booking </span></a>
+                    <a href="index2.html"><span>Login</span></a>
+                    <a href="index2.html"><span>Sign Up</span></a>
+                </nav>
+            </div>
+        </div>
+    
+</body>
+</html>
