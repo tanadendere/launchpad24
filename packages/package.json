@@ -1,0 +1,18 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "This is a package demostration",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Tana",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.3.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
